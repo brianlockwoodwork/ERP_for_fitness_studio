@@ -26,6 +26,8 @@ The toolkit is divided into three powerful parts:
 
 ### 1. 🎯 Marketing Funnels
 
+[Here is the description](/marketing_funnel/README.MD)
+
 Because throwing money at ads and hoping for the best is *so 2020*. This section helps you:
 
 - Analyze the performance of different marketing channels like a data ninja 🥷  

@@ -23,6 +23,7 @@ The project is divided into three parts:
 1. **Marketing Funnels** 
    - Analyze the performance of different marketing channels to optimize ad spend.  
 2. **Financial Analysis**  
+[Here is the description](/README.md)
    - Tools for assessing income, expenses, profitability and other necessary metrics for the good existence of a business.  
 3. **Salary Widget**  
    - Calculate employee salaries, including taxes and bonuses. And most importantly, it shows the employee his current KPI performance and what needs to be done to increase his salary.
