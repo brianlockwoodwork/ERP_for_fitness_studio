@@ -4,7 +4,25 @@
 
 ![dashboard](/assets/main_dashboard.gif)
 
-## 📦 Project Structure
+## 📚 Table of Contents
+
+# 📚 Table of Contents
+
+- [Project Structure](#project-structure)
+- [The Project](#the-project)
+- [Financial Analysis — The Control Center of Your Business](#financial-analysis--the-control-center-of-your-business)
+- [How Did We Start?](#how-did-we-start)
+- [Step 1: Digitalize the Great Ol’ Notebook](#step-1-digitalize-the-great-ol-notebook)
+- [Step 2: Connect It to the Mothership](#step-2-connect-it-to-the-mothership)
+- [Step 3: Build the Cashflow Sheet Like a Pro](#step-3-build-the-cashflow-sheet-like-a-pro)
+- [Step 4: Build That P&L Sheet Like a Financial Wizard](#step-4-build-that-pl-sheet-like-a-financial-wizard)
+- [Step 5: Crunch the Numbers for Income](#step-5-crunch-the-numbers-for-income)
+- [Step 6: Add Other Incomes](#step-6-add-other-incomes)
+- [Step 7: Add Other P&L Expenses](#step-7-add-other-pl-expenses)
+- [Conclusion](#conclusion)
+- [Closing Thoughts](#closing-thoughts)
+
+## Project Structure
 
 The toolkit is divided into three powerful parts:
 
@@ -39,7 +57,7 @@ It’s like a business analyst and a spreadsheet had a baby... and that baby is 
 ---
 
 
-# 💼 The Project
+# The Project
 
 > ⚠️ **Quick Heads-Up!**  
 > I'm not gonna bore you with all the implementation magic 🪄 (because, let’s be honest, 99.8% of readers would rather wrestle a bear than read that).  
@@ -48,7 +66,7 @@ It’s like a business analyst and a spreadsheet had a baby... and that baby is 
 
 ---
 
-## 🧠 Today’s Topic: Financial Analysis — The Control Center 🧭 of Your Business Empire
+## Financial Analysis — The Control Center of Your Business
 
 Originally built with ❤️ for **Fitness Studios**, especially the ones using ERPs that *try* to do it all… but kinda flop when it comes to:
 
@@ -63,7 +81,7 @@ And if you don't figure that out quick... well, let’s just say your business m
 
 ---
 
-## 🔍 So How Did We Start?
+## How Did We Start?
 
 We rolled up our sleeves and asked the magic question:  
 **What data do we *already* have?** 🕵️‍♀️
@@ -81,7 +99,7 @@ And that was it…
 
 And so, with a few formulas, a dream, and possibly way too much coffee ☕ — **we began.**
 
-## 🧱 Step 1: Digitalize the Great Ol’ Notebook
+## Step 1: Digitalize the Great Ol’ Notebook
 
 It was time to retire that legendary expense notebook 📒 (RIP, old friend) and build something cleaner:  
 ✨ **The Transaction Log.**
@@ -95,7 +113,7 @@ This became the **first brick** in building our financial basement 🧱💰 — 
 
 ---
 
-## 🔗 Step 2: Connect It to the Mothership
+## Step 2: Connect It to the Mothership
 
 With our shiny new Transaction Log in place, we had to beam that data over to the **Control Center** (aka the fancy dashboard table 🎛️).
 
@@ -105,7 +123,7 @@ Enter this trusty import spell:
 =IMPORTRANGE("https://docs.google.com/spreadsheets/d/1c7hDcup_u0AhyK11zYkaLzEZFhTqEgNo5fVgM8VUo5M/edit?gid=593220343#gid=593220343","TRANSACTION_LOG_WHOLE")
 ```
 
-## 💸 Step 3: Build the Cashflow Sheet Like a Pro
+## Step 3: Build the Cashflow Sheet Like a Pro
 
 Now that the data was flowing into our system like good karma, it was time to turn that raw info into something *actually useful* — **Cashflow**.
 
@@ -122,7 +140,7 @@ Yup, we’re using Named Ranges. A lot. Like, get comfy with them because they�
 
 Boom — we’ve got a clean, dynamic cashflow tracker that doesn’t make you want to flip a table. 🙌💼
 
-## 📊 Step 4: Build That P&L Sheet Like a Financial Wizard
+## Step 4: Build That P&L Sheet Like a Financial Wizard
 
 Alright, time to put on our accountant hats 🧙‍♂️ — we’re diving into the magical world of **Profit & Loss** (P&L). But don’t worry, we made it fun. Or at least… tolerable. 😅
 
@@ -131,17 +149,20 @@ We already knew the ERP our client uses logs:
 2. 🚫 Missed workouts  
 3. ⌛ Expired memberships  
 
-So we dove headfirst into that data like Sherlock Spreadsheet 🕵️‍♀️ and pulled it all into a sheet called:  
-### `❌ Integration (Exports)`
+So we dove into the ERP data like Sherlock Spreadsheet 🕵️‍♀️
 
-> ❗**Red Cross = DO NOT TOUCH!**  
-> (Seriously. It's like the "Keep Out" drawer in every kitchen.)
+We created a new sheet called `Exports` and dumped all the data from the client’s ERP into it. Think of it as the central vault 💾 where all the membership check-ins, missed workouts, and expired subs now live.
+
+>Want to take a peek inside the vault?  
+>👉 [Here’s the table](https://docs.google.com/spreadsheets/d/1RNFbm5Liwbc_MEqer1T12WhgvPUN8cYNNmecbcPuHgg/edit?gid=288172794#gid=288172794)
+
+> If you want to see the data samples - [click here](/data_samples/)
 
 ![integration_exports](/assets//integration_exports.gif)
 
 ---
 
-## 🧮 Step 5: Crunch the Numbers for Income
+## Step 5: Crunch the Numbers for Income
 
 From the "Integration" sheet, we piped the numbers into the income part of our P&L sheet, **grouped by membership names and dates** — perfect for A/B testing, performance insights, or just feeling smugly organized. 🧠📅
 
@@ -156,7 +177,7 @@ Here’s the *Frankenstein monster* formula we used to do that:
 
 So now we’ve got income from memberships — awesome! BUT WAIT, there’s more…
 
-## 🏢 Step 6: Add other incomes
+## Step 6: Add other incomes
 
 Our clients also rent out studio time ⏰ and take a percentage of deposits 💸. We track this too — and yep, we pull it from our old pal, the [Transaction Log](https://docs.google.com/spreadsheets/d/1c7hDcup_u0AhyK11zYkaLzEZFhTqEgNo5fVgM8VUo5M/edit?gid=593220343#gid=593220343)
 
@@ -167,7 +188,7 @@ We used this formula to bring rental/deposit-based income into the fold:
 ```
 > 📌 $E6 = Income Category (like “Renting out studios” or “% of Deposit”)
 
-## 🧾 Step 7: Add Other P&L Expenses
+## Step 7: Add Other P&L Expenses
 
 Now, here’s the thing — pulling **every** expense from the Transaction Log with just one formula?  
 Yeah... not gonna happen. That’s like trying to make a protein shake with a fork. 🥴
@@ -193,7 +214,7 @@ Go ahead, click it. You know you want to. 😏📊
 
 ---
 
-# 🏁 Conclusion: From Chaos to Clarity (With a Lot of Coffee ☕)
+# Conclusion
 
 Let’s take a breath and admire the journey:
 
