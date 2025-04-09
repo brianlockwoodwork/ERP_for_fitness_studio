@@ -6,8 +6,6 @@
 
 ## 📚 Table of Contents
 
-# 📚 Table of Contents
-
 - [Project Structure](#project-structure)
 - [The Project](#the-project)
 - [Financial Analysis — The Control Center of Your Business](#financial-analysis--the-control-center-of-your-business)
