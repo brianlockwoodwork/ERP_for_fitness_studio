@@ -30,7 +30,6 @@
 - [Step 6: Additional Income Sources](#step-6-additional-income-sources)
 - [Step 7: P&L Expense Categories](#step-7-pl-expense-categories)
 - [Conclusion](#conclusion)
-- [Closing Thoughts](#closing-thoughts)
 
 ## Project Structure
 
