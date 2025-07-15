@@ -1,172 +1,169 @@
-# 🚀 Google Sheets Business Toolkit 📊💼
+# Google Sheets Business Toolkit
 
-[This bad boy](https://docs.google.com/spreadsheets/d/1WQeCAfbRjIPxgSVgwQHFGvEazNcwzVSTiosd9x9fu4Q/edit?usp=sharing) is a **Swiss Army spreadsheet** 🧰 built in Google Sheets, designed to help businesses clean their mess across **Marketing**, **Finance**, and **Payroll** (yes, even Jeff in accounting is impressed).
+[This project](https://docs.google.com/spreadsheets/d/1WQeCAfbRjIPxgSVgwQHFGvEazNcwzVSTiosd9x9fu4Q/edit?usp=sharing) is a comprehensive business toolkit built in Google Sheets. It is designed to support in managing and analyzing operations across three core areas: Marketing, Finance, and Payroll.
 
 ![dashboard](/assets/main_dashboard.gif)
 
-## 📚 Table of Contents
+## All the links
+
+[👉🏻 P&L, Cashflow and dashboards](https://docs.google.com/spreadsheets/d/1WQeCAfbRjIPxgSVgwQHFGvEazNcwzVSTiosd9x9fu4Q/edit?gid=939981570#gid=939981570)
+
+[👉🏻 Salary Widget for Sales](https://docs.google.com/spreadsheets/d/1uBI8FtLOFW1EB8KTrBrZ8nmXv9CKlfTnuGUjMiXMZxw/edit?gid=278982829#gid=278982829)
+
+[👉🏻 Transaction Log](https://docs.google.com/spreadsheets/d/1c7hDcup_u0AhyK11zYkaLzEZFhTqEgNo5fVgM8VUo5M/edit?gid=593220343#gid=593220343)
+
+[👉🏻 Marketing Funnels](https://docs.google.com/spreadsheets/d/18UbCYCmYHT0UhvSi8QXXYHwRIDvc2aSxA5sjXRmFEW4/edit?usp=sharing)
+
+[👉🏻 Exports *(technical source for all the tables above)*](https://docs.google.com/spreadsheets/d/1RNFbm5Liwbc_MEqer1T12WhgvPUN8cYNNmecbcPuHgg/edit?gid=288172794#gid=288172794)
+
+## Table of Contents
 
 - [Project Structure](#project-structure)
 - [The Project](#the-project)
-- [Financial Analysis — The Control Center of Your Business](#financial-analysis--the-control-center-of-your-business)
-- [How Did We Start?](#how-did-we-start)
-- [Step 1: Digitalize the Great Ol’ Notebook](#step-1-digitalize-the-great-ol-notebook)
-- [Step 2: Connect It to the Mothership](#step-2-connect-it-to-the-mothership)
-- [Step 3: Build the Cashflow Sheet Like a Pro](#step-3-build-the-cashflow-sheet-like-a-pro)
-- [Step 4: Build That P&L Sheet Like a Financial Wizard](#step-4-build-that-pl-sheet-like-a-financial-wizard)
-- [Step 5: Crunch the Numbers for Income](#step-5-crunch-the-numbers-for-income)
-- [Step 6: Add Other Incomes](#step-6-add-other-incomes)
-- [Step 7: Add Other P&L Expenses](#step-7-add-other-pl-expenses)
+- [Financial Analysis](#financial-analysis)
+- [Implementation steps](#implementation-steps)
+- [Step 1: Digitalize the Transactions Log](#step-1-digitalize-the-transactions-log)
+- [Step 2: Data Integration](#step-2-data-integration)
+- [Step 3: Cashflow Sheet](#step-3-cashflow-sheet)
+- [Step 4: Profit & Loss Sheet](#step-4-profit--loss-sheet)
+- [Step 5: Membership Income](#step-5-membership-income)
+- [Step 6: Additional Income Sources](#step-6-additional-income-sources)
+- [Step 7: P&L Expense Categories](#step-7-pl-expense-categories)
 - [Conclusion](#conclusion)
 - [Closing Thoughts](#closing-thoughts)
 
 ## Project Structure
 
-The toolkit is divided into three powerful parts:
+The toolkit is divided into three main parts:
 
-### 1. 🎯 Marketing Funnels
+### 1. Marketing Funnels
 
 [Here is the description](/marketing_funnel/README.MD)
 
-Because throwing money at ads and hoping for the best is *so 2020*. This section helps you:
+Provides a structured way to analyze marketing channels.
+It enables to:
 
-- Analyze the performance of different marketing channels like a data ninja 🥷  
-- Identify which channels are killing it 🏆 and deserve more ad spend  
-- Call out the budget black holes 🕳️ that need to be fixed, fast  
+- Evaluate the performance of different sources
+- Identify underperforming campaigns
+- Allocate budget more effectively
 
-### 2. 📈 Financial Analysis
+### 2. Financial Analysis
 
-All the money stuff, minus the tears:
+Includes income, expense, and profit monitoring.
+Built to help:
 
-- Assess income, expenses, and profitability like a Wall Street wizard 🧙‍♂️  
-- Track vital business metrics to make sure your company stays alive (and thriving) 💪  
-- Make financial decisions that *won’t* require a magic 8-ball 🎱  
+- Track key financial metrics
+- Understand business health
+- Make informed financial decisions
 
-### 3. 💰 Salary Widget
+### 3. KPI Widget
 
-Because payroll math shouldn’t feel like rocket science:
+Because payroll math shouldn’t feel like rocket science for the employees:
 
-- Calculate employee salaries, taxes, and bonuses without a headache 🧾  
-- Show employees their **KPI performance** in real-time 📊  
-- Clearly display what they need to do to level up that paycheck 💸 (because who doesn’t love a good salary boost?)
-
----
-
-It’s like a business analyst and a spreadsheet had a baby... and that baby is a genius 👶📈.
+- Calculate employee salaries and bonuses
+- Show their **KPI performance** in real-time
+- Clearly display what they need to do to level up their paycheck
 
 ---
 
 
 # The Project
 
-> ⚠️ **Quick Heads-Up!**  
-> I'm not gonna bore you with all the implementation magic 🪄 (because, let’s be honest, 99.8% of readers would rather wrestle a bear than read that).  
-> **BUT** — if you're the 0.2% who lives for spreadsheets and formulas — here’s your golden ticket 🎟️:  
-> [👉 Click to explore the sheet](https://docs.google.com/spreadsheets/d/1WQeCAfbRjIPxgSVgwQHFGvEazNcwzVSTiosd9x9fu4Q/edit?usp=sharing) (viewer access only, no breaking stuff please 🛑).
+> This project is tailored for operational use by fitness studios, though the logic and structure are applicable to many service-based businesses. The toolkit replaces manual notebooks and fragmented tools with a structured, formula-driven system. It integrates ERP data, financial logs, and performance metrics into a unified Google Sheets environment.
+> 
+> [👉 Click to explore the sheet](https://docs.google.com/spreadsheets/d/1WQeCAfbRjIPxgSVgwQHFGvEazNcwzVSTiosd9x9fu4Q/edit?usp=sharing) (viewer access).
 
 ---
 
-## Financial Analysis — The Control Center of Your Business
+## Financial Analysis
 
-Originally built with ❤️ for **Fitness Studios**, especially the ones using ERPs that *try* to do it all… but kinda flop when it comes to:
+The financial analysis component addresses common issues found in ERPs that lack robust financial reporting. It enables:
 
-- ❌ Counting Cash Flow  
-- ❌ Generating a real Profit & Loss Statement (P&L)
+- Accurate tracking of cashflow
+- Real-time generation of Profit & Loss statements
+- Visibility into actual business profitability
 
-Why does that matter? Well… (*drum roll please*) 🥁  
+Why does that matter?
 > Just because the bank account has money in it doesn't mean it’s yours.  
 > At best? Maybe a quarter of it is actually yours. Maybe. 😅
 
-And if you don't figure that out quick... well, let’s just say your business might end up doing burpees it didn’t sign up for. 🏋️‍♂️💸
-
 ---
 
-## How Did We Start?
+## Implementation Steps
 
-We rolled up our sleeves and asked the magic question:  
-**What data do we *already* have?** 🕵️‍♀️
+We began by evaluating the data sources already available. The findings included:
 
-Here’s what we found:
+1. Sales data from the ERP system, including membership details and pricing  
+2. A physical notebook used for manually recording expenses  
 
-1. ✅ The client’s ERP had **sales data** — memberships, pricing, all that jazz  
-2. 📝 A good ol’ **physical notebook** with *expenses scribbled in like pirate treasure maps* 🏴‍☠️
+While limited, this data provided a starting point. From there, we initiated the process of building a structured and automated system using Google Sheets.
 
-And that was it…
+## Step 1: Digitalize the Transactions Log
 
-💬 *Not great, not terrible.* But hey — you gotta start somewhere, right?
+To improve accuracy and scalability, we replaced the manual expense notebook with a structured digital log.
 
----
+**The Transaction Log** serves as a centralized place to record all business expenses in a consistent format.
 
-And so, with a few formulas, a dream, and possibly way too much coffee ☕ — **we began.**
-
-## Step 1: Digitalize the Great Ol’ Notebook
-
-It was time to retire that legendary expense notebook 📒 (RIP, old friend) and build something cleaner:  
-✨ **The Transaction Log.**
-
-[👉 Check it out here](https://docs.google.com/spreadsheets/d/1c7hDcup_u0AhyK11zYkaLzEZFhTqEgNo5fVgM8VUo5M/edit?usp=sharing)
+[View the Transaction Log](https://docs.google.com/spreadsheets/d/1c7hDcup_u0AhyK11zYkaLzEZFhTqEgNo5fVgM8VUo5M/edit?usp=sharing)
 
 ![Transaction Log](/assets/Transaction%20Log.png)
 
-Now, what clients *used to scribble down* in the notebook, they just enter into this sheet.  
-This became the **first brick** in building our financial basement 🧱💰 — and trust me, this basement has *good bones*.
+This became the foundational data source for all subsequent financial analysis and reporting.
 
 ---
 
-## Step 2: Connect It to the Mothership
+## Step 2: Data Integration
 
-With our shiny new Transaction Log in place, we had to beam that data over to the **Control Center** (aka the fancy dashboard table 🎛️).
+With the Transaction Log established, the next step was to connect it to the main reporting dashboard.
 
-Enter this trusty import spell:
+This was done using the `IMPORTRANGE` function in Google Sheets, which allows data to be imported from one spreadsheet to another:
 
 ```excel
 =IMPORTRANGE("https://docs.google.com/spreadsheets/d/1c7hDcup_u0AhyK11zYkaLzEZFhTqEgNo5fVgM8VUo5M/edit?gid=593220343#gid=593220343","TRANSACTION_LOG_WHOLE")
 ```
 
-## Step 3: Build the Cashflow Sheet Like a Pro
+## Step 3: Cashflow Sheet
 
-Now that the data was flowing into our system like good karma, it was time to turn that raw info into something *actually useful* — **Cashflow**.
+With the data successfully integrated, the next step was to build a structured and dynamic Cashflow sheet.
+
+This sheet transforms raw transactional records into a clear view of the company's financial activity over time.
 
 ![cashflow_overview](/assets/cashflow_overview.gif)
 
-We pulled the data from the Transaction Log using this formula:
+The core calculation uses the following formula:
 
 ```excel
-=SUMIFS(I_TL_EXPENCE,I_TL_CATEGORY,$E25,I_TL_PAYMENT_DATE,F$3,I_TL_BRANCH,'❌ Configuration'!$A$2)
+=SUMIFS(I_TL_EXPENCE, I_TL_CATEGORY, $E25, I_TL_PAYMENT_DATE, F$3, I_TL_BRANCH, '❌ Configuration'!$A$2)
 ```
-Yup, we’re using Named Ranges. A lot. Like, get comfy with them because they’re gonna be your new besties. 🧑‍🤝‍🧑
 
-> 🧠 Pro Tip: Named ranges make your formulas 99% more readable and 1000% less rage-inducing.
+## Step 4: Profit & Loss Sheet
 
-Boom — we’ve got a clean, dynamic cashflow tracker that doesn’t make you want to flip a table. 🙌💼
+The next phase involved building the Profit & Loss (P&L) sheet to track operational performance in terms of income and expenses.
 
-## Step 4: Build That P&L Sheet Like a Financial Wizard
+The ERP system used by the client provided data on:
 
-Alright, time to put on our accountant hats 🧙‍♂️ — we’re diving into the magical world of **Profit & Loss** (P&L). But don’t worry, we made it fun. Or at least… tolerable. 😅
+1. Membership check-ins  
+2. Missed workouts  
+3. Expired memberships  
 
-We already knew the ERP our client uses logs:
-1. 🧍‍♂️ Check-ins  
-2. 🚫 Missed workouts  
-3. ⌛ Expired memberships  
+We consolidated this data into a dedicated sheet called `Exports`, which serves as the central repository for all membership-related activity. This structured export allows for automated income calculations based on client behavior and membership status.
 
-So we dove into the ERP data like Sherlock Spreadsheet 🕵️‍♀️
-
-We created a new sheet called `Exports` and dumped all the data from the client’s ERP into it. Think of it as the central vault 💾 where all the membership check-ins, missed workouts, and expired subs now live.
-
->Want to take a peek inside the vault?  
->👉 [Here’s the table](https://docs.google.com/spreadsheets/d/1RNFbm5Liwbc_MEqer1T12WhgvPUN8cYNNmecbcPuHgg/edit?gid=288172794#gid=288172794)
-
-> If you want to see the data samples - [click here](/data_samples/)
+[View the data table](https://docs.google.com/spreadsheets/d/1RNFbm5Liwbc_MEqer1T12WhgvPUN8cYNNmecbcPuHgg/edit?gid=288172794#gid=288172794)  
+[View data samples](/data_samples/)
 
 ![integration_exports](/assets//integration_exports.gif)
 
----
+## Step 5: Membership Income
 
-## Step 5: Crunch the Numbers for Income
+Using the data from the `Integration` sheet, income from memberships was calculated and included in the Profit & Loss (P&L) sheet. The figures were grouped by membership name and transaction date to ensure accurate reporting and historical comparisons.
 
-From the "Integration" sheet, we piped the numbers into the income part of our P&L sheet, **grouped by membership names and dates** — perfect for A/B testing, performance insights, or just feeling smugly organized. 🧠📅
+This calculation combines revenue from three key sources:
 
-Here’s the *Frankenstein monster* formula we used to do that:
+1. Membership check-ins  
+2. Expired memberships with remaining balances  
+3. Missed sessions with associated charges  
+
+The combined formula used is:
 
 ```excel
 =SUMIFS(I_E_CHECK_INS_AMOUNT,I_E_CHECK_INS_DATE,PNL_DATE,I_E_CHECK_INS_MEMBERSHIP_NAME_IN_TABLE,$E9, I_E_CHECK_INS_BRANCH,'❌ Configuration'!$A$2)+SUMIFS(I_E_EXPIRED_MONEY_REMAINS,I_E_EXPIRED_MEMBERSHIP,$E9,I_E_EXPIRED_DATE, PNL_DATE,I_E_EXPIRED_BRANCH_1,'❌ Configuration'!$A$2)+SUMIFS(I_E_MISSED_AMOUNT,I_E_MISSED_DATE,PNL_DATE,I_E_MISSED_BRANCH,'❌ Configuration'!$A$2,I_E_MISSED_NAME_AS_IN_TABLE,$E9)
@@ -175,74 +172,42 @@ Here’s the *Frankenstein monster* formula we used to do that:
 
 ![P&L_overview](/assets/P&L_overview.gif)
 
-So now we’ve got income from memberships — awesome! BUT WAIT, there’s more…
+## Step 6: Additional Income Sources
 
-## Step 6: Add other incomes
+In addition to membership revenue, clients also generate income by renting out gym space and collecting an interest of deposits. These income streams are tracked separately and sourced from the Transaction Log.
 
-Our clients also rent out studio time ⏰ and take a percentage of deposits 💸. We track this too — and yep, we pull it from our old pal, the [Transaction Log](https://docs.google.com/spreadsheets/d/1c7hDcup_u0AhyK11zYkaLzEZFhTqEgNo5fVgM8VUo5M/edit?gid=593220343#gid=593220343)
+[View the Transaction Log](https://docs.google.com/spreadsheets/d/1c7hDcup_u0AhyK11zYkaLzEZFhTqEgNo5fVgM8VUo5M/edit?gid=593220343#gid=593220343)
 
-We used this formula to bring rental/deposit-based income into the fold:
+To calculate this type of revenue, we used the following formula:
 
 ```excel
 =IFERROR(SUMIFS(I_TL_DAILY_INCOME,I_TL_CATEGORY,$E6,I_TL_BRANCH,'❌ Configuration'!$A$2,I_TL_START_DATE,"<="&PNL_DATE,I_TL_END_DATE,">="&PNL_DATE),0)
 ```
 > 📌 $E6 = Income Category (like “Renting out studios” or “% of Deposit”)
 
-## Step 7: Add Other P&L Expenses
+## Step 7: P&L Expense Categories
 
-Now, here’s the thing — pulling **every** expense from the Transaction Log with just one formula?  
-Yeah... not gonna happen. That’s like trying to make a protein shake with a fork. 🥴
+Not all expense types can be aggregated using a single formula due to structural and categorical differences in the data. To ensure accuracy and maintain clarity, expenses were grouped into specific categories and calculated independently. These categories include:
 
-So, we broke it down into specific categories that we prefer to handle automatically:
+1. Salaries  
+2. Advertising Budget  
+3. Transaction Fees  
+4. Depreciation of Assets  
 
-1. 👩‍💼 Salaries  
-2. 📣 Ad Budget  
-3. 💳 Transaction Fees  
-4. 🏚️ Depreciation of Assets
+Each category has its own logic and dedicated formula within the spreadsheet. All calculations are fully automated and integrated into the Profit & Loss structure.
 
-Each one had its own little drama and spreadsheet magic. But instead of boring you with every twist and turn (99.8% of people are already asleep 😴)...
+For users interested in the detailed logic and implementation:
 
-Let’s just say:  
-> ✅ **They’re all automated**  
-> 💪 **They work smoothly**  
-> 🤓 **You can absolutely geek out over the formulas if you want to**
-
-If you're one of the beautiful 0.2% Data Nerds who live for this kind of thing —  
-👉 [here’s the spreadsheet with all the juicy logic](https://docs.google.com/spreadsheets/d/1WQeCAfbRjIPxgSVgwQHFGvEazNcwzVSTiosd9x9fu4Q/edit?gid=2127869173#gid=2127869173)
-
-Go ahead, click it. You know you want to. 😏📊
-
----
+[View the full spreadsheet and formula logic](https://docs.google.com/spreadsheets/d/1WQeCAfbRjIPxgSVgwQHFGvEazNcwzVSTiosd9x9fu4Q/edit?gid=2127869173#gid=2127869173)
 
 # Conclusion
 
-Let’s take a breath and admire the journey:
+This toolkit transforms scattered operational data into a unified system for financial and business performance tracking. It provides:
 
-✅ We started with a physical notebook that looked like it’d survived a pirate raid 🏴‍☠️  
-✅ We built a transaction system that would make your accountant cry tears of joy 😭  
-✅ We wrangled ERP exports like data cowboys 🤠  
-✅ We summoned formulas from the Excel underworld 👻  
-✅ And we made Cashflow and P&L sheets that *actually make sense*
+•	A structured transaction logging system
 
-All while keeping the chaos under control... mostly. 😅
+•	Real-time cashflow visibility
 
-# Closing Thoughts
+•	An automated, transparent P&L statement
 
-This toolkit isn't just a spreadsheet. It’s a:
-- 🧠 Business brain
-- 💵 Finance fairy godmother
-- 📊 Data dashboard on caffeine
-
-Whether you're a founder trying to make payroll, a marketer tracking ROI, or a spreadsheet nerd who just loves a good `SUMIFS`, this toolkit has your back.
-
-So go ahead — duplicate it, test it, break it (gently), and make it your own.  
-And if all else fails… blame Jeff in accounting. 😉📉
-
----
-
-> 💌 Got questions? Spot a bug? Want to send coffee money?  
-> Ping me via [LinkedIn](https://www.linkedin.com/in/brianlockwoodwork/) or toss a star ⭐ on GitHub if this made your life 1% easier.
-
-Stay analytical, stay caffeinated — and never trust a clean whiteboard.  
-Peace ✌️ and spreadsheets 📄🧠
-
+•	Integrated marketing and payroll metrics
